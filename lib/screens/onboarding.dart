@@ -98,7 +98,7 @@ class _OnBoardingState extends State<OnBoarding> {
                         if (box.isOpen) {
                           box.put('isNewUser', false);
                         }
-                        Navigator.pushReplacementNamed(context, '/');
+                        Navigator.pushNamed(context, '/LoginPage');
                       }
                       if (_index > 1) {
                         return;

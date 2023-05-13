@@ -7,6 +7,7 @@ import 'package:koduko/models/task_event.dart';
 import 'package:koduko/screens/about.dart';
 import 'package:koduko/screens/app.dart';
 import 'package:koduko/screens/archive_routines.dart';
+import 'package:koduko/screens/login_page.dart';
 import 'package:koduko/screens/onboarding.dart';
 import 'package:koduko/screens/stats.dart';
 import 'package:koduko/screens/tasks.dart';
@@ -85,7 +86,7 @@ class MyApp extends StatelessWidget {
                 builder: (lightDynamic, darkDynamic) {
                   return MaterialApp(
                       debugShowCheckedModeBanner: false,
-                      title: 'KudoKo',
+                      title: 'OSAT',
                       themeMode: value.getTheme,
                       theme: ThemeData(
                         colorScheme: lightDynamic ??
@@ -109,7 +110,8 @@ class MyApp extends StatelessWidget {
                         ArchiveRoutinesScreen.routeName: ((context) =>
                             const ArchiveRoutinesScreen()),
                         OnBoarding.routeName: (((context) =>
-                            const OnBoarding()))
+                            const OnBoarding())),
+                        '/LoginPage' : (context) => LoginPage()
                       });
                 },
               ),

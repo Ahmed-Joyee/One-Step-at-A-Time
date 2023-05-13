@@ -25,7 +25,7 @@ class ArchiveRoutinesScreen extends StatelessWidget {
                         flex: 10,
                         child: Center(
                           child: Text(
-                            "Archived routines will show up here!",
+                            "Cloud synced account settings are supposed to be implemented but STM32F44...",
                             textAlign: TextAlign.center,
                             style: Theme.of(context)
                                 .textTheme
@@ -57,7 +57,7 @@ class ArchiveRoutinesScreen extends StatelessWidget {
                           value.archiveRoutines()[index].name,
                           style: Theme.of(context).textTheme.titleLarge,
                         ),
-                        subtitle: const Text("Archived"),
+                        subtitle: const Text("Profile"),
                         trailing: SizedBox(
                           width: 100,
                           child: Row(
@@ -83,7 +83,7 @@ class ArchiveRoutinesScreen extends StatelessWidget {
                       ),
                     );
                   }),
-          child: const ScreenHeader(text: 'Archived', tag: 'Archived'),
+          child: const ScreenHeader(text: 'Profile', tag: 'Profile'),
         ),
       ),
     );
